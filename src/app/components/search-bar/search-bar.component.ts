@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, model, output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search-bar',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './search-bar.component.html',
-  styleUrl: './search-bar.component.css'
+  styleUrl: './search-bar.component.css',
 })
 export class SearchBarComponent {
+  search = model<string>('Initial');
 
+  searchButtonCLicked = output();
+  searchClick() {
+    this.searchButtonCLicked.emit();
+  }
 }

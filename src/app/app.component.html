@@ -1,1 +1,4 @@
-<app-search-bar />
+<app-search-bar (searchButtonCLicked)="increaseCount()" [(search)]="search" />
+Search : {{ search }} <br />
+Click count :
+{{ count }}
