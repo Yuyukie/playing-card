@@ -1,0 +1,45 @@
+<div id="card">
+  <div id="inside">
+    <header id="header">
+      <div class="left">
+        <div id="name">{{ name }}</div>
+      </div>
+      <div class="right">
+        <div id="hp">{{ hp }}</div>
+        <img
+          class="energy-icon"
+          src="assets/img/energie_jaune.png"
+          alt="icon energy"
+        />
+      </div>
+    </header>
+    <figure id="art">
+      <img src="assets/img/pika.webp" alt="image pikachu" />
+      <figcaption>{{ figureCaption }}</figcaption>
+    </figure>
+    <div id="capacities">
+      <div class="capacity">
+        <div class="main">
+          <div class="cost">
+            <img
+              class="energy-icon"
+              src="assets/img/energie_jaune.png"
+              alt="icon energy"
+              id="icon"
+            />
+            <img
+              class="energy-icon"
+              src="assets/img/energie_jaune.png"
+              alt="icon energy"
+            />
+          </div>
+          <div class="name">{{ attackName }}</div>
+          <div class="damage">{{ attackStrengh }}</div>
+        </div>
+        <div class="description">
+          {{ attackDescription }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

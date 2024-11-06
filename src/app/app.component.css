@@ -1,0 +1,10 @@
+h1 {
+  background-color: black;
+  color: white;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
